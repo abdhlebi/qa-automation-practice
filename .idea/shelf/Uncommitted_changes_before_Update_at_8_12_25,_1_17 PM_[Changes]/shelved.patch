@@ -1,0 +1,239 @@
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"ProjectRootManager\" version=\"2\" project-jdk-name=\"Python 3.12 (qa-automation-practice)\" project-jdk-type=\"Python SDK\" />\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision b1e495f265e43543bf780c55758d3e6db2238e13)
++++ b/.idea/misc.xml	(date 1754851498580)
+@@ -1,4 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
++  <component name="Black">
++    <option name="sdkName" value="Python 3.12 (qa-automation-practice)" />
++  </component>
+   <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.12 (qa-automation-practice)" project-jdk-type="Python SDK" />
+ </project>
+\ No newline at end of file
+Index: tests/Test_youtube_search.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/tests/Test_youtube_search.py b/tests/Test_youtube_search.py
+new file mode 100644
+--- /dev/null	(date 1754430731365)
++++ b/tests/Test_youtube_search.py	(date 1754430731365)
+@@ -0,0 +1,22 @@
++from selenium import webdriver
++from selenium.webdriver.common.by import By
++import time
++
++def youtube_search():
++
++    driver = webdriver.Chrome()
++    driver.get("https://www.youtube.com")
++    time.sleep(10)
++
++    search_box = driver.find_element(By.XPATH, '//*[@id="center"]/yt-searchbox/div[1]/form/input')
++    search_box.send_keys("QA Automation with Python")
++
++    search_buttom = driver.find_element(By.XPATH, '//*[@id="center"]/yt-searchbox/button/span/span/div')
++    search_buttom.click()
++    time.sleep(15)
++
++    assert "qa automation" in driver.title.lower(), "Search term not found in title"
++
++    driver.quit()
++
++youtube_search()
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"93d3f14d-ef19-473a-98e7-fff931da75e8\" name=\"Changes\" comment=\"\">\n      <change afterPath=\"$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/.idea/misc.xml\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/.idea/vcs.xml\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/main.py\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/tests/test_google_search.py\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"GitHubPullRequestSearchHistory\"><![CDATA[{\n  \"lastFilter\": {\n    \"state\": \"OPEN\",\n    \"assignee\": \"abdhlebi\"\n  }\n}]]></component>\n  <component name=\"GithubPullRequestsUISettings\"><![CDATA[{\n  \"selectedUrlAndAccountId\": {\n    \"url\": \"https://github.com/abdhlebi/qa-automation-practice.git\",\n    \"accountId\": \"5ec8713b-1260-4faa-8221-7283a47b5876\"\n  }\n}]]></component>\n  <component name=\"ProjectColorInfo\"><![CDATA[{\n  \"customColor\": \"\",\n  \"associatedIndex\": 8\n}]]></component>\n  <component name=\"ProjectId\" id=\"30shnkNRsRdSSis1tc6jdeS4n10\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\"><![CDATA[{\n  \"keyToString\": {\n    \"ModuleVcsDetector.initialDetectionPerformed\": \"true\",\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\n    \"RunOnceActivity.git.unshallow\": \"true\",\n    \"git-widget-placeholder\": \"main\",\n    \"settings.editor.selected.configurable\": \"vcs.Git\"\n  },\n  \"keyToStringList\": {\n    \"ChangesTree.GroupingKeys\": [\n      \"directory\",\n      \"repository\"\n    ]\n  }\n}]]></component>\n  <component name=\"SharedIndexes\">\n    <attachedChunks>\n      <set>\n        <option value=\"bundled-python-sdk-03e874896e21-d902c0275401-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-252.23892.439\" />\n      </set>\n    </attachedChunks>\n  </component>\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"93d3f14d-ef19-473a-98e7-fff931da75e8\" name=\"Changes\" comment=\"\" />\n      <created>1754422357043</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1754422357043</updated>\n    </task>\n    <servers />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision b1e495f265e43543bf780c55758d3e6db2238e13)
++++ b/.idea/workspace.xml	(date 1754890627978)
+@@ -4,39 +4,48 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="93d3f14d-ef19-473a-98e7-fff931da75e8" name="Changes" comment="">
+-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/tests/test_google_search.py" afterDir="false" />
++    <list default="true" id="93d3f14d-ef19-473a-98e7-fff931da75e8" name="Changes" comment="google search">
++      <change afterPath="$PROJECT_DIR$/tests/Pytest- youtube_search.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/tests/Test_youtube_search.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/tests/class file.py" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+     <option name="LAST_RESOLUTION" value="IGNORE" />
++  </component>
++  <component name="FileTemplateManagerImpl">
++    <option name="RECENT_TEMPLATES">
++      <list>
++        <option value="Python Script" />
++      </list>
++    </option>
+   </component>
+   <component name="Git.Settings">
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
+-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+-  "lastFilter": {
+-    "state": "OPEN",
+-    "assignee": "abdhlebi"
++  <component name="GitHubPullRequestSearchHistory">{
++  &quot;lastFilter&quot;: {
++    &quot;state&quot;: &quot;OPEN&quot;,
++    &quot;assignee&quot;: &quot;abdhlebi&quot;
+   }
+-}]]></component>
+-  <component name="GithubPullRequestsUISettings"><![CDATA[{
+-  "selectedUrlAndAccountId": {
+-    "url": "https://github.com/abdhlebi/qa-automation-practice.git",
+-    "accountId": "5ec8713b-1260-4faa-8221-7283a47b5876"
++}</component>
++  <component name="GithubPullRequestsUISettings">{
++  &quot;selectedUrlAndAccountId&quot;: {
++    &quot;url&quot;: &quot;https://github.com/abdhlebi/qa-automation-practice.git&quot;,
++    &quot;accountId&quot;: &quot;5ec8713b-1260-4faa-8221-7283a47b5876&quot;
+   }
+-}]]></component>
+-  <component name="ProjectColorInfo"><![CDATA[{
+-  "customColor": "",
+-  "associatedIndex": 8
+-}]]></component>
++}</component>
++  <component name="ProjectColorInfo">{
++  &quot;customColor&quot;: &quot;&quot;,
++  &quot;associatedIndex&quot;: 8
++}</component>
+   <component name="ProjectId" id="30shnkNRsRdSSis1tc6jdeS4n10" />
++  <component name="ProjectLevelVcsManager">
++    <ConfirmationsSetting value="2" id="Add" />
++  </component>
+   <component name="ProjectViewState">
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+@@ -44,7 +53,12 @@
+   <component name="PropertiesComponent"><![CDATA[{
+   "keyToString": {
+     "ModuleVcsDetector.initialDetectionPerformed": "true",
++    "Python tests.Python tests in Pytest- youtube_search.py.executor": "Run",
++    "Python tests.Python tests in test_google_search.py.executor": "Run",
++    "Python.Test_youtube.executor": "Run",
++    "Python.class file.executor": "Run",
+     "RunOnceActivity.ShowReadmeOnStart": "true",
++    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+     "RunOnceActivity.git.unshallow": "true",
+     "git-widget-placeholder": "main",
+     "settings.editor.selected.configurable": "vcs.Git"
+@@ -71,6 +85,19 @@
+       <option name="presentableId" value="Default" />
+       <updated>1754422357043</updated>
+     </task>
++    <task id="LOCAL-00001" summary="google search">
++      <option name="closed" value="true" />
++      <created>1754423966403</created>
++      <option name="number" value="00001" />
++      <option name="presentableId" value="LOCAL-00001" />
++      <option name="project" value="LOCAL" />
++      <updated>1754423966403</updated>
++    </task>
++    <option name="localTasksCounter" value="2" />
+     <servers />
+   </component>
++  <component name="VcsManagerConfiguration">
++    <MESSAGE value="google search" />
++    <option name="LAST_COMMIT_MESSAGE" value="google search" />
++  </component>
+ </project>
+\ No newline at end of file
+Index: tests/class file.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/tests/class file.py b/tests/class file.py
+new file mode 100644
+--- /dev/null	(date 1754889048965)
++++ b/tests/class file.py	(date 1754889048965)
+@@ -0,0 +1,32 @@
++from selenium import webdriver
++from selenium.webdriver.common.by import By
++import time
++
++
++
++class  Youtube_search:
++
++    def __init__(self):
++
++       self.driver = webdriver.Chrome()
++
++    def open_youtube(self):
++        self.driver.get("https://www.youtube.com")
++        time.sleep(10)
++
++    def search_box(self):
++        search_box = self.driver.find_element(By.XPATH, '//*[@id="center"]/yt-searchbox/div[1]/form/input')
++        search_box.send_keys("QA Automation with Python")
++
++        search_buttom = self.driver.find_element(By.XPATH, '//*[@id="center"]/yt-searchbox/button/span/span/div')
++        search_buttom.click()
++        time.sleep(15)
++
++    def verify_title(self):
++        assert "qa automation" in self.driver.title.lower(), "Search term not found in title"
++
++
++    def youtube_quite(self):
++      self.driver.quit()
++
++
+Index: tests/Pytest- youtube_search.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/tests/Pytest- youtube_search.py b/tests/Pytest- youtube_search.py
+new file mode 100644
+--- /dev/null	(date 1754890289321)
++++ b/tests/Pytest- youtube_search.py	(date 1754890289321)
+@@ -0,0 +1,22 @@
++import pytest
++from selenium import webdriver
++from selenium.webdriver.common.by import By
++from selenium.webdriver.common.keys import Keys
++import time
++
++@pytest.fixture
++def driver():
++    driver = webdriver.Chrome()
++    driver.maximize_window()
++
++def test_youtube_search(driver):
++    driver.get("https://www.youtube.com")
++    time.sleep(10)  # Let page load
++
++    search_box = driver.find_element(By.XPATH, "//input[@id='search']")
++    search_box.send_keys("SDET Automation Tutorial" + Keys.ENTER)
++
++    time.sleep(10)  # Wait for results page to load
++
++    # Assert that "youtube" is in the page title (case insensitive)
++    assert "youtube" in driver.title.lower(), "Expected 'youtube' to be in the page title"
