@@ -13,10 +13,12 @@ opt.add_experimental_option("detach", True)               #
 driver = webdriver.Chrome(options=opt)                                #
 
 driver.get("https://www.orangehrm.com/en/pricing")
-time.sleep(10)
 
 
-info = driver.find_element(By.XPATH,'/html/body/div[2]/div/div/section[1]/div/div/div[1]/h1').text
+WebDriverWait(driver, 15).until(
+        EC.visibility_of_element_located((By.XPATH, "/html/body/section/section/form/dl[1]/dd/input"))).send_keys('atif@gmail.com')
+info = driver.find_element(By.XPATH,'/html/body/div[1]/div/div/section[1]/div/div/div[1]/h1').text
+
 
 data = {'Website': 'OrangeHRM', 'Information': info}
 excel_file = 'output.xlsx'
