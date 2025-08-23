@@ -4,7 +4,6 @@ import time
 
 def google_search():
     driver = webdriver.Chrome()
-
     driver.get("https://www.google.com")
 
     time.sleep(15)  # wait for page to load

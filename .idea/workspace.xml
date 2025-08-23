@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="93d3f14d-ef19-473a-98e7-fff931da75e8" name="Changes" comment="youtube search">
+    <list default="true" id="93d3f14d-ef19-473a-98e7-fff931da75e8" name="Changes" comment="HRM login">
+      <change afterPath="$PROJECT_DIR$/tests/my task1.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/excel scrape.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/excel scrape.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_google_search.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_google_search.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +25,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="test1" />
+        <entry key="$PROJECT_DIR$" value="my-feature-branch" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -51,25 +54,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python tests.Python tests in youtube_pytest.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python.youtube_search.executor&quot;: &quot;Run&quot;,
-    &quot;Python.youtube_search_class.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python tests.Python tests in youtube_pytest.py.executor": "Run",
+    "Python.data scrap to excel.executor": "Run",
+    "Python.excel scrape.executor": "Run",
+    "Python.my task1.executor": "Run",
+    "Python.selenium test1.executor": "Run",
+    "Python.youtube_search.executor": "Run",
+    "Python.youtube_search_class.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "branch2",
+    "settings.editor.selected.configurable": "vcs.Git"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;ChangesTree.GroupingKeys&quot;: [
-      &quot;directory&quot;,
-      &quot;repository&quot;
+  "keyToStringList": {
+    "ChangesTree.GroupingKeys": [
+      "directory",
+      "repository"
     ]
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -101,11 +108,46 @@
       <option name="project" value="LOCAL" />
       <updated>1755579000526</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="youtube search">
+      <option name="closed" value="true" />
+      <created>1755579603435</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1755579603435</updated>
+    </task>
+    <task id="LOCAL-00004" summary="excel comand">
+      <option name="closed" value="true" />
+      <created>1755886281462</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1755886281462</updated>
+    </task>
+    <task id="LOCAL-00005" summary="excel file">
+      <option name="closed" value="true" />
+      <created>1755886564598</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1755886564598</updated>
+    </task>
+    <task id="LOCAL-00006" summary="HRM login">
+      <option name="closed" value="true" />
+      <created>1755926617886</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1755926617886</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="youtube search" />
-    <option name="LAST_COMMIT_MESSAGE" value="youtube search" />
+    <MESSAGE value="excel comand" />
+    <MESSAGE value="excel file" />
+    <MESSAGE value="HRM login" />
+    <option name="LAST_COMMIT_MESSAGE" value="HRM login" />
   </component>
 </project>
